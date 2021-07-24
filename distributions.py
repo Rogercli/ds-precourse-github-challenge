@@ -12,11 +12,11 @@ def combinations(n,k):
 def binomial_pmf(n, p, k):
     x=combinations(n,k)
     return (x*(((p)**k)*((1-p)**(n-k))))
-
+print(binomial_pmf(40,.25,5))
 
 
 def poisson_pmf(k,lam):
-    return ((lam**k)*(e**-lam))/factorial(k)
+    return ((lam**k)*(math.e**-lam))/factorial(k)
 
 
 def geometric_pmf(n,p):
