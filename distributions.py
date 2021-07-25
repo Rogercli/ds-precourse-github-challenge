@@ -1,5 +1,4 @@
 import math
-from math import e
 
 def factorial(n):
     prod=1
@@ -11,7 +10,7 @@ def combinations(n,k):
     return factorial(n)/(factorial(n-k)*factorial(k))
 def binomial_pmf(n, p, k):
     x=combinations(n,k)
-    return (x*(((p)**k)*((1-p)**(n-k))))
+    return round((x*(((p)**k)*((1-p)**(n-k)))),5)
 print(binomial_pmf(40,.25,5))
 
 
