@@ -10,8 +10,8 @@ def combinations(n,k):
     return factorial(n)/(factorial(n-k)*factorial(k))
 def binomial_pmf(n, p, k):
     x=combinations(n,k)
-    return round((x*(((p)**k)*((1-p)**(n-k)))),5)
-print(binomial_pmf(40,.25,5))
+    return x*(p**k)*(1-p)**(n-k)
+print(binomial_pmf(10,.3,4))
 
 
 def poisson_pmf(k,lam):
